@@ -53,7 +53,7 @@ export class stat extends Plugin {
 		if (this.j.o.showCharsCounter && this.charCounter) {
 			const chars = this.j.o.countHTMLChars
 				? this.j.value
-				: text.replace(SPACE_REG_EXP(), '');
+				: text;
 
 			this.charCounter.textContent = this.j.i18n(
 				'Chars: %d',
