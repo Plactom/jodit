@@ -48,6 +48,7 @@ export class stat extends Plugin {
 	}
 
 	private calc = this.j.async.throttle(() => {
+		console.error('ai krllllllllllllllll')
 		const text = this.j.text;
 
 		if (this.j.o.showCharsCounter && this.charCounter) {

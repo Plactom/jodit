@@ -112,6 +112,7 @@ export class Jodit extends ViewWithToolbar implements IJodit, Dlgs {
 	 * ```
 	 */
 	waitForReady(): Promise<IJodit> {
+		console.error("JODIT INIT")
 		if (this.isReady) {
 			return Promise.resolve(this);
 		}
